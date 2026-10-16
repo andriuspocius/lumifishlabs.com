@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumifish Labs</title>
+<meta name="description" content="Lumifish Labs builds small, focused apps for Shopify stores - including Lumifish: Popups, Bars & Forms.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234a12d6'/%3E%3Cpath d='M7 11l7 5-7 5M25 11l-7 5 7 5' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #fbfaf8; --surface: #ffffff; --text: #1d1b22; --muted: #5f5b68; --line: #e7e3ec;
+    --brand: #4a12d6; --brand-soft: #efe9ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121016; --surface: #1b1820; --text: #f1eef6; --muted: #a7a1b2; --line: #2c2834;
+      --brand: #a98bff; --brand-soft: #241d38;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121016; --surface: #1b1820; --text: #f1eef6; --muted: #a7a1b2; --line: #2c2834;
+    --brand: #a98bff; --brand-soft: #241d38;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 40px; }
+  header.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 56px; }
+  header.brand svg { width: 40px; height: 40px; flex: none; }
+  header.brand span { font-weight: 700; font-size: 20px; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(32px, 6vw, 46px); line-height: 1.12; letter-spacing: -0.025em; margin: 0 0 18px; }
+  .lead { font-size: 19px; color: var(--muted); margin: 0 0 40px; max-width: 620px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+    padding: 24px; margin: 0 0 40px;
+  }
+  .card h2 { font-size: 20px; margin: 0 0 6px; }
+  .card p { margin: 0 0 16px; color: var(--muted); }
+  .tag { display: inline-block; font-size: 13px; font-weight: 600; color: var(--brand); background: var(--brand-soft); border-radius: 99px; padding: 2px 10px; margin-bottom: 12px; }
+  a.button {
+    display: inline-block; background: var(--brand); color: #fff; text-decoration: none; font-weight: 600;
+    padding: 10px 18px; border-radius: 10px;
+  }
+  :root[data-theme="dark"] a.button { color: #121016; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) a.button { color: #121016; } }
+  section { margin: 0 0 40px; }
+  section h2 { font-size: 22px; letter-spacing: -0.01em; margin: 0 0 10px; }
+  section p { margin: 0 0 12px; }
+  a { color: var(--brand); }
+  footer { border-top: 1px solid var(--line); margin-top: 56px; padding-top: 20px; color: var(--muted); font-size: 15px; }
+  footer p { margin: 0 0 4px; }
+</style>
+</head>
+<body>
+<main>
+  <header class="brand">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#4a12d6"/><path d="M7 11l7 5-7 5M25 11l-7 5 7 5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span>Lumifish Labs</span>
+  </header>
+
+  <h1>Small, focused apps for Shopify stores.</h1>
+  <p class="lead">We are Lumifish Labs, a small software studio in Vilnius, Lithuania. We build and support apps that help Shopify merchants turn visitors into subscribers and customers.</p>
+
+  <div class="card">
+    <span class="tag">Shopify app</span>
+    <h2>Lumifish: Popups, Bars &amp; Forms</h2>
+    <p>Email pop-ups, announcement bars, slide-ins, corner widgets and forms - designed in a visual editor, mobile-ready by default. Free plan available.</p>
+    <a class="button" href="https://apps.shopify.com/pop-up-builder">See it on the Shopify App Store</a>
+  </div>
+
+  <section>
+    <h2>Got an email from us?</h2>
+    <p>We sometimes write to Shopify store owners who have used our app before - a short personal note, sometimes with a welcome-back offer that is already tied to your store.</p>
+    <p>We only use the contact address a store publishes on its own website, and we never share it with anyone.</p>
+    <p>Not interested? Reply "no thanks" to our email, or write to <a href="mailto:hello@lumifishlabs.com">hello@lumifishlabs.com</a>, and we will not contact you again.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p><a href="mailto:hello@lumifishlabs.com">hello@lumifishlabs.com</a></p>
+  </section>
+
+  <footer>
+    <p>MB LUMIUS / Lumifish Labs</p>
+    <p>Goštauto str. 8, 01108 Vilnius, Lithuania</p>
+  </footer>
+</main>
+</body>
+</html>
